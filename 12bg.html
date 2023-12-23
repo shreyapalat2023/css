@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            color: white;
+            height: 300px;
+            margin: 10px 0 ;
+            border: solid 10px black;
+        }
+        .background-img{
+            background-image: url(https://picsum.photos/id/237/200/300);
+        }
+        .background-repeat{
+            background-image: url(https://picsum.photos/id/237/200/300);
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+        }
+        .background-attachment{
+            background-image: url(https://picsum.photos/id/237/200/300);
+            background-attachment: fixed;
+        }
+        .background-position{
+            background-image: url(https://picsum.photos/id/237/200/300);
+            /* background-position: center; */
+            /* background-position: left; */
+            /* background-position: right; */
+            background-position: center right;
+            /* Horizontally right vertically center*/
+    
+        }
+        .background-size{
+            background-image: url(https://picsum.photos/id/237/200/300);
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* height */
+            background-size: cover;
+            /* width */
+        }
+        .background{
+            /* background-image: url(); */
+            background: no-repeat url(https://picsum.photos/id/237/200/300);
+        }
+        .background-flag{
+            background: linear-gradient(100deg, orange, white, green);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>background-color</h1>
+    <h1>background-img</h1>
+    <h1>background-repeat</h1>
+    <h1>background-attachment</h1>
+    <h1>background-position</h1>
+    <h1>background-size</h1>
+    <h1>background</h1>
+    <h1>background-flag</h1>
+
+    <div class="background-color">backgroung-color</div>
+    <div class="background-img">background-img</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-position">background-position</div>
+    <div class="background-size">background-size</div>
+    <div class="background">background</div>
+    <div class="background-flag">background-flag</div>
+</body>
+</html>
