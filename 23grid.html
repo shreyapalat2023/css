@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width :1500px;
+            margin: 0 auto;
+            background-color: burlywood;
+            display: grid;
+            column-gap: 10px;
+            row-gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 1fr 1fr;
+        }
+        .box{
+           /* width: 150px; */
+           height: 150px;
+           background-color: orangered;
+           border: solid 2px;
+           }
+        #header{
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            color: white;
+            /* height: 50px; */
+            font-size: 50px;
+        }
+        #section{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            text-align: center;
+            color: white;
+            font-size: 50px;
+        }
+        #aside{
+            grid-column-start:2 ;
+            grid-column-end: 4;
+            text-align: center;
+            color: white;
+            font-size: 50px;
+        }
+        #footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            text-align: center;
+            color: white;
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="box" id="header">header</div>
+            <div class="box" id="section">section</div>
+            <div class="box" id="aside">aside</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box" id="footer">footer</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+        </div>
+    </section>
+</body>
+</html>
