@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 1500px;
+            margin: 0 auto;
+        }
+        section{
+            background-color: gray;
+            height: 500px;
+            text-align: center;
+            color: white;
+        }
+        .logo{
+            background-color: green;
+            text-align: center;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .links{
+            background-color: orange;
+            text-align: center;
+            color: white;
+            grid-column-start: 3;
+            grid-column-end: 11;
+        }
+        .data{
+            background-color:darkcyan;
+            text-align: center;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 11;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns:repeat(10,1fr);
+            grid-template-rows:repeat(2,1fr) ;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="grid">
+                <div class="logo">
+                    <h1>logo</h1>
+                </div>
+                <div class="links">
+                    <h1>links</h1>
+                </div>
+                <div class="data">
+                    <h1>data</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
